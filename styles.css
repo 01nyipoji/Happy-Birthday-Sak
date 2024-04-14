@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(asset/sak.jpg);
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1){
+    color: aliceblue;
+}
+
+section:nth-child(2){
+    color: #1d212b;
+    background: aliceblue;
+}
+
+section:nth-child(3){
+    color: aliceblue;
+}
+
+section:nth-child(4){
+    color: #1d212b;
+    background: aliceblue;
+}
+
+section .container{
+    margin: 100px;
+}
+
+section h1{
+    font-size: 60px;
+}
+
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .cards{
+    display: flex;
+}
+
+section .cards .text-cards{
+    background: burlywood;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+section .cards .text-cards h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 40px;
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+    body{
+        background-image: url(asset/sak.jpg);
+    }
+
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
